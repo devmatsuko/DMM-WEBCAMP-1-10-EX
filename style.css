@@ -9,7 +9,7 @@
 header {
   width: 100%; /* 横幅いっぱい */
   height: 50px; /* 縦幅50px */
-  background-color: #ff9a4b;
+  background-color: #ff9a4b; /* 背景色を#ff9a4bに */
 }
 
 main {
@@ -22,7 +22,7 @@ main {
 .flow {
   width: 300px; /* 横幅300px */
   background-color: #eeeeee;
-  margin-right: 30px; /* 右に10pxの外側余白 */
+  margin-right: 30px; /* 右に30pxの外側余白 */
   position: relative; /* 子要素の基準位置を相対位置へ変更する */
   padding: 10px; /* 10pxの内側余白 */
 }
@@ -31,7 +31,7 @@ main {
   margin-right: 0px; /* 最後の要素のみ外側余白を0pxに */
 }
 
-.flow-img1{
+.flow-img1 {
   width: 280px; /* 横幅280px */
   height: 150px; /* 縦幅150px */
   background-image: url(img/flow01.png);
@@ -39,7 +39,7 @@ main {
   background-size: cover;
 }
 
-.flow-img2{
+.flow-img2 {
   width: 280px; /* 横幅280px */
   height: 150px; /* 縦幅150px */
   background-image: url(img/flow02.png);
@@ -47,7 +47,7 @@ main {
   background-size: cover;
 }
 
-.flow-img3{
+.flow-img3 {
   width: 280px; /* 横幅280px */
   height: 150px; /* 縦幅150px */
   background-image: url(img/flow03.png);
@@ -57,19 +57,48 @@ main {
 
 .step {
   padding: 3px;
-  background-color: #ff9a4b;
-  color: white;
-  position: absolute;
-  top: 0px;
-  left: 0px;
+  background-color: #ff9a4b; /* 背景色を#ff9a4bに */
+  color: white; /* 文字色をwhiteに */
+  position: absolute; /* step表記を絶対配置に変更 */
+  top: 0px; /* 左上に配置 */
+  left: 0px; /* 左上に配置 */
 }
 
 .title {
-  margin: 15px 0px 5px;
+  margin: 15px 0px 5px; /* タイトルの外側余白 */
 }
 
 footer {
   width: 100%; /* 横幅いっぱい */
   height: 50px; /* 縦幅50px */
-  background-color: #aaaaaa;
+  background-color: #aaaaaa; /* 背景色を#aaaaaaに */
+}
+
+/* レスポンシブ対応（画面横サイズが最大768pxの場合のレイアウト変更） */
+@media screen and (max-width: 768px) {
+  main {
+    width: 100%; /* 横幅いっぱい */
+    display: block; /* Flexの解除 */
+  }
+
+  .flow {
+    width: 90%; /* 横幅を全体の90%に変更 */
+    margin: 0px 5% 20px; /* 外側余白の変更 */
+  }
+
+  .flow:last-child {
+    margin-bottom: 0px; /* 最後の要素のみ外側余白を0pxに */
+  }
+
+  .flow-img1 {
+    width: 100%; /* 横幅いっぱい */
+  }
+
+  .flow-img2 {
+    width: 100%; /* 横幅いっぱい */
+  }
+
+  .flow-img3 {
+    width: 100%; /* 横幅いっぱい */
+  }
 }
