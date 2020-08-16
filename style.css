@@ -1,0 +1,75 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+header {
+  width: 100%; /* 横幅いっぱい */
+  height: 50px; /* 縦幅50px */
+  background-color: #ff9a4b;
+}
+
+main {
+  width: 960px; /* 横幅960px */
+  display: flex; /* Flexboxの利用 */
+  justify-content: center; /* 要素の横並び・中央寄せ */
+  margin: 50px auto; /* 50pxの外側余白 */
+}
+
+.flow {
+  width: 300px; /* 横幅300px */
+  background-color: #eeeeee;
+  margin-right: 30px; /* 右に10pxの外側余白 */
+  position: relative; /* 子要素の基準位置を相対位置へ変更する */
+  padding: 10px; /* 10pxの内側余白 */
+}
+
+.flow:last-child {
+  margin-right: 0px; /* 最後の要素のみ外側余白を0pxに */
+}
+
+.flow-img1{
+  width: 280px; /* 横幅280px */
+  height: 150px; /* 縦幅150px */
+  background-image: url(img/flow01.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.flow-img2{
+  width: 280px; /* 横幅280px */
+  height: 150px; /* 縦幅150px */
+  background-image: url(img/flow02.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.flow-img3{
+  width: 280px; /* 横幅280px */
+  height: 150px; /* 縦幅150px */
+  background-image: url(img/flow03.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.step {
+  padding: 3px;
+  background-color: #ff9a4b;
+  color: white;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.title {
+  margin: 15px 0px 5px;
+}
+
+footer {
+  width: 100%; /* 横幅いっぱい */
+  height: 50px; /* 縦幅50px */
+  background-color: #aaaaaa;
+}
